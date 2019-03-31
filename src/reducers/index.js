@@ -2,10 +2,10 @@ import { combineReducers } from "redux";
 
 const goodsReducer = () => {
   return [
-    { title: "abcd", price: "23" },
-    { title: "cdes", price: "223" },
-    { title: "32add", price: "213" },
-    { title: "ggsss", price: "243" }
+    { title: "apple", price: "$23" },
+    { title: "banana", price: "$223" },
+    { title: "orange", price: "$213" },
+    { title: "kiwi", price: "$243" }
   ];
 };
 

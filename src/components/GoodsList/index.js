@@ -24,7 +24,15 @@ class GoodsList extends Component {
   }
   render() {
     console.log(this.props);
-    return <div className="ui divided list">{this.renderList()}</div>;
+    return (
+      <div className="ui container grid">
+        <div className="ui row">
+          <div className="column eight wide">
+            <div className="ui divided list">{this.renderList()}</div>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 
