@@ -1,4 +1,5 @@
 import { combineReducers } from "redux";
+import postsReducers from "./postsReducers";
 
 const goodsReducer = () => {
   return [
@@ -20,5 +21,6 @@ const selectedGoodsReducer = (selectedGoods = null, action) => {
 
 export default combineReducers({
   goods: goodsReducer,
-  selectedGoods: selectedGoodsReducer
+  selectedGoods: selectedGoodsReducer,
+  posts: postsReducers
 });
