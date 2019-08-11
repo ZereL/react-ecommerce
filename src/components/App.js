@@ -14,7 +14,8 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/GoodsDetail" exact component={GoodsDetail} />
           <Route path="/GoodsList" exact component={GoodsList} />
-          <Route path="/Form" exact component={Form} />
+          {/* <Route path="/Form" exact component={Form} /> */}
+          <Route path="/Form" exact render={() => <Form />} />
           <Route path="/PostList" exact component={PostList} />
         </div>
       </BrowserRouter>

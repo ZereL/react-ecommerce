@@ -1,5 +1,6 @@
 import { combineReducers } from "redux";
 import postsReducers from "./postsReducers";
+import { reducer as formReducer } from 'redux-form';
 
 const goodsReducer = () => {
   return [
@@ -22,5 +23,6 @@ const selectedGoodsReducer = (selectedGoods = null, action) => {
 export default combineReducers({
   goods: goodsReducer,
   selectedGoods: selectedGoodsReducer,
-  posts: postsReducers
+  posts: postsReducers,
+  form: formReducer
 });
